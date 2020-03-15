@@ -79,8 +79,7 @@
         <div class="main__body">
           <div class="container">
             <div class="main__title">Факультет бизнеса «Капитаны»</div>
-            <div class="main__subtitle">Это получение высшего образования<br class="br"> и возможность запуска своего проекта одновременно</div>
-            <div class="main__button button button--fill">Подробнее</div>
+            <div class="main__subtitle">Это получение высшего образования<br class="br"> и возможность запуска своего проекта одновременно</div><a class="main__button button button--fill" href="">Подробнее</a>
             <div class="main__advantages">
               <div class="main__advantage main__advantage--first">Престижное экономическое образование <br class="br">в одном из лучших <br class="br">университетов страны    </div>
               <div class="main__advantage main__advantage--second">Уникальные управленческие <br class="br">и бизнес- модули,  связанные <br class="br">с проектной деятельностью</div>
@@ -88,32 +87,25 @@
             </div>
           </div>
         </div>
-        <div class="main__calendar">
-          <div class="main__calendar-item">
+        <div class="main__calendar"><a class="main__calendar-item" href="">
             <div class="main__calendar-date">
               <div class="main__calendar-day">15</div>
               <div class="main__calendar-month">февраль</div>
               <div class="main__calendar-time">12:00</div>
             </div>
-            <div class="main__calendar-describe">26 апреля Финал<br> Акселератора института<br> им. Шифферса</div>
-          </div>
-          <div class="main__calendar-item">
+            <div class="main__calendar-describe">26 апреля Финал<br> Акселератора института<br> им. Шифферса</div></a><a class="main__calendar-item" href="">
             <div class="main__calendar-date">
               <div class="main__calendar-day">28</div>
               <div class="main__calendar-month">февраль</div>
               <div class="main__calendar-time">12:00</div>
             </div>
-            <div class="main__calendar-describe">На чем мечтают делать деньги<br> современные школьники<br> (1 часть)</div>
-          </div>
-          <div class="main__calendar-item">
+            <div class="main__calendar-describe">На чем мечтают делать деньги<br> современные школьники<br> (1 часть)</div></a><a class="main__calendar-item" href="">
             <div class="main__calendar-date">
               <div class="main__calendar-day">04</div>
               <div class="main__calendar-month">март</div>
               <div class="main__calendar-time">12:00</div>
             </div>
-            <div class="main__calendar-describe">Online-вебинар для<br> поступающих в магистратуру<br> в 2019 учебном году.</div>
-          </div><a class="main__calendar-arrow" href="#"></a>
-        </div>
+            <div class="main__calendar-describe">Online-вебинар для<br> поступающих в магистратуру<br> в 2019 учебном году.</div></a><a class="main__calendar-arrow" href="#"></a></div>
       </div>
     </div>
     <div class="group-block">
@@ -123,7 +115,12 @@
             <div class="about__title title">О капитанах <br class="about__br">за 5 минут</div>
             <div class="about__video">
               <div class="about__video-inner"><img class="about__video-preview" src="img/about/video-preview.jpg" alt="">
-                <video class="about__video-player" src=""></video>
+                <div class="popup__video about__popup about__popup--active">
+                  <div class="about__video-player">
+                    <div class="about__video-player--close"></div>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/9knYNjp95bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -603,7 +600,7 @@
             <input class="grant__input" type="text" placeholder="Ваше имя*">
             <input class="grant__input" type="text" placeholder="Ваш телефон*">
             <input class="grant__input" type="text" placeholder="vk.com/">
-            <button class="grant__button button button--fill">Отправить</button>
+            <button class="grant__button button button--fill" type="submit">Отправить</button>
             <div class="grant__conditions">
               <input class="grant__checkbox" type="checkbox" name="checkbox" id="grant__checkbox">
               <label class="grant__label" for="grant__checkbox"></label>
@@ -870,10 +867,11 @@
               <input class="request__input request__input--name" type="text" placeholder="Ваше имя*">
               <input class="request__input request__input--phone" type="text" placeholder="Ваш телефон*">
               <input class="request__input request__input--vk" type="text" placeholder="vk.com/профиль">
-              <button class="request__button button button--fill">Отправить</button>
+              <button class="request__button button button--fill" type="submit">Отправить</button>
               <div class="request__conditions-outer">
                 <div class="request__conditions">
-                  <input class="request__radio" type="radio" name="radio">
+                  <input class="request__checkbox" type="checkbox" name="checkbox" id="request__checkbox">
+                  <label class="request__label" for="request__checkbox"></label>
                   <div class="request__conditions-inner">
                     <div class="request__conditions-text">Я согласен с условиями обработки </div><a class="request__conditions-link" href="">персональных  данных</a>
                   </div>
@@ -905,18 +903,16 @@
               <div class="mfooter__link"><a href="#">О факультете</a></div>
               <div class="mfooter__link"><a href="#">Документы</a></div>
             </div>
-            <div class="mfooter__conts">
-              <div class="mfooter__phone">8 (800) 500 93 71 </div>
-              <div class="mfooter__mail">info@kapitany-russia.ru</div>
+            <div class="mfooter__conts"><a class="mfooter__phone" href="">8 (800) 500 93 71 </a><a class="mfooter__mail" href="">info@kapitany-russia.ru</a>
               <div class="mfooter__address">Москва, <br>Стремянный пер., 36</div>
             </div>
           </div>
         </div>
         <div class="mfooter__social">
-          <div class="mfooter__social-link mfooter__social-link--1"><a href="#"></a></div>
-          <div class="mfooter__social-link mfooter__social-link--2"><a href="#"></a></div>
-          <div class="mfooter__social-link mfooter__social-link--3"><a href="#"></a></div>
-          <div class="mfooter__social-link mfooter__social-link--4"><a href="#"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--insta"><a href="#"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--ytube"><a href="#"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--fb"><a href="#"></a></div>
+          <div class="mfooter__social-link mfooter__social-link--vk"><a href="#"></a></div>
         </div>
       </div>
       <div class="footer__descktop dfooter">
@@ -924,27 +920,24 @@
           <div class="container">
             <div class="dfooter__question">Задайте <br class="br">вопрос в мессенджере</div>
             <div class="dfooter__arrow"></div>
-            <div class="dfooter__messengers"><a class="dfooter__messenger">WhatsUp</a><a class="dfooter__messenger">Telegram</a><a class="dfooter__messenger">Вконтакте</a><a class="dfooter__messenger">Фейсбук</a></div>
-            <div class="dfooter__recall">Перезвоните мне</div>
+            <div class="dfooter__messengers"><a class="dfooter__messenger" href="">WhatsUp</a><a class="dfooter__messenger" href="">Telegram</a><a class="dfooter__messenger" href="">Вконтакте</a><a class="dfooter__messenger" href="">Фейсбук</a></div><a class="dfooter__recall" href="">Перезвоните мне</a>
           </div>
         </div>
         <div class="dfooter__body">
           <div class="container"> 
-            <div class="dfooter__logo"><a class="logo">
+            <div class="dfooter__logo"><a class="logo" href="">
                 <div class="logo__text">Капитаны</div></a></div>
             <div class="dfooter__menus">
               <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">Абитуриенту</a><a class="dfooter__menu-link" href="#">Бакалавриат</a><a class="dfooter__menu-link" href="#">Магистратура</a><a class="dfooter__menu-link" href="#">Дни открытых дверей</a><a class="dfooter__menu-link" href="#">Мероприятия</a></div>
               <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">О факультете</a><a class="dfooter__menu-link" href="#">История</a><a class="dfooter__menu-link" href="#">Программа обучения</a><a class="dfooter__menu-link" href="#">Руководство</a><a class="dfooter__menu-link" href="#">Преподаватели</a></div>
               <div class="dfooter__menu"><a class="dfooter__menu-title" href="#">Документы</a><a class="dfooter__menu-link" href="#">Договор на оказание <br class="br">образовательных услуг</a><a class="dfooter__menu-link" href="#">Реквизиты</a><a class="dfooter__menu-link" href="#">Устав</a></div>
             </div>
-            <div class="dfooter__conts">
-              <div class="dfooter__phone">8 (800) 500 93 71 </div>
-              <div class="dfooter__mail">info@kapitany-russia.ru</div>
+            <div class="dfooter__conts"><a class="dfooter__phone" href="">8 (800) 500 93 71 </a><a class="dfooter__mail" href="">info@kapitany-russia.ru</a>
               <div class="dfooter__social">
-                <div class="dfooter__social-link dfooter__social-link--1"><a href="#"></a></div>
-                <div class="dfooter__social-link dfooter__social-link--2"><a href="#"></a></div>
-                <div class="dfooter__social-link dfooter__social-link--3"><a href="#"></a></div>
-                <div class="dfooter__social-link dfooter__social-link--4"><a href="#"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--insta"><a href="#"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--ytube"><a href="#"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--fb"><a href="#"></a></div>
+                <div class="dfooter__social-link dfooter__social-link--vk"><a href="#"></a></div>
               </div>
               <div class="dfooter__address">Москва, Стремянный пер., 36</div>
             </div>
