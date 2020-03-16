@@ -181,3 +181,40 @@ window.addEventListener("scroll", function () {
     }
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
+
+let aboutPopup = document.querySelector('.about__popup');
+let lifePopup = document.querySelector('.life__popup');
+
+document.querySelector('.about__video-inner').addEventListener('click', function () {
+    if (!document.querySelector('.popup__video--active')) {
+        aboutPopup.classList.add('popup__video--active');
+        
+    }else{
+        aboutPopup.classList.remove('popup__video--active');
+    }
+})
+document.querySelector('.life__side-img').addEventListener('click', function () {
+    if (!document.querySelector('.popup__video--active')) {
+        lifePopup.classList.add('popup__video--active');
+    }else{
+        lifePopup.classList.remove('popup__video--active');
+    }
+})
+
+
+document.querySelector('.grant__form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.querySelector('.grant__form').style="display:none";
+    document.querySelector('.grant__title').innerHTML="Ваша заявка принята!";
+    document.querySelector('.grant__sucsess').classList.add('grant__sucsess--active');
+    console.log(e.target);
+})
+document.querySelector('.request__form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.querySelector('.request__form').style="display:none";
+    document.querySelector('.request__title').innerHTML="Ваша заявка принята!";
+    document.querySelector('.request__sucsess').classList.add('request__sucsess--active');
+    document.querySelector('.request__inner').classList.add('request__inner--active');
+    console.log(e.target);
+})
+
